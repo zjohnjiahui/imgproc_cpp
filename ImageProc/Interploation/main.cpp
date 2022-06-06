@@ -7,7 +7,7 @@ void resizeBicubic(cv::Mat& src, cv::Mat& dst, cv::Size size, double sx = 0, dou
 
 int main()
 {
-  cv::Mat lena = cv::imread(R"(D:\VisualStudio\CVPractice\ImageProc\Lena.png)");
+  cv::Mat lena = cv::imread(R"(Lena.png)");
 
   cv::Mat dst;
   resizeBilinear(lena, dst, cv::Size(1024, 1024));
