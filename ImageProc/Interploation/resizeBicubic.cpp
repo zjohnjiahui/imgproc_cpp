@@ -1,3 +1,5 @@
+#include<opencv2/opencv.hpp>
+
 // refer: 
 // https://blog.csdn.net/qq_29058565/article/details/52769497
 // https://blog.csdn.net/u010555688/article/details/24352343
@@ -16,7 +18,7 @@ void getWeight(double weight[4], double x, double a = -0.5) {
   weight[3] = a * abs(dist[3] * dist[3] * dist[3]) - 5 * a*dist[3] * dist[3] + 8 * a*abs(dist[3]) - 4 * a;
 }
 
-void resizeBicubic(cv::Mat& src, cv::Mat& dst, cv::Size size, double sx = 0, double sy = 0)
+void resizeBicubic(cv::Mat& src, cv::Mat& dst, cv::Size size, double sx, double sy)
 {
   int dst_rows;
   int dst_cols;

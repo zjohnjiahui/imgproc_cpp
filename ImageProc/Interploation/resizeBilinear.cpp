@@ -1,8 +1,10 @@
-//refer:
+#include<opencv2/opencv.hpp>
+
+// refer:
 // https://blog.csdn.net/weixin_40647819/article/details/86601070
 // https://www.cnblogs.com/Imageshop/archive/2011/11/12/2246808.html
 
-void resizeBilinear(cv::Mat& src, cv::Mat& dst, cv::Size size, double sx=0, double sy=0) {
+void resizeBilinear(cv::Mat& src, cv::Mat& dst, cv::Size size, double sx, double sy) {
   int dst_rows;
   int dst_cols;
 
@@ -55,7 +57,7 @@ void resizeBilinear(cv::Mat& src, cv::Mat& dst, cv::Size size, double sx=0, doub
   }
 }
 
-void resizeBilinearQuantization(cv::Mat& src, cv::Mat& dst, cv::Size size, double sx = 0, double sy = 0)
+void resizeBilinearQuantization(cv::Mat& src, cv::Mat& dst, cv::Size size, double sx, double sy)
 {
   int dst_rows;
   int dst_cols;

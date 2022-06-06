@@ -1,5 +1,6 @@
+#include<opencv2/opencv.hpp>
 
-void resizeNearest(cv::Mat& src, cv::Mat& dst, cv::Size size, double sx = 0, double sy = 0) {
+void resizeNearest(cv::Mat& src, cv::Mat& dst, cv::Size size, double sx, double sy) {
   int dst_rows;
   int dst_cols;
 
