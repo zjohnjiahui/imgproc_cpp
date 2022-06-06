@@ -1,3 +1,5 @@
+// refer: https://blog.csdn.net/qq_29058565/article/details/52769497
+
 void getWeight(double weight[4], double x, double a = -0.5) {
   int X = static_cast<int>(x);
   double dist[4];
