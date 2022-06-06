@@ -61,7 +61,7 @@ void histEqualization(const cv::Mat& src, cv::Mat& dst)
 
 int test()
 {
-  cv::Mat lena = cv::imread(R"(D:\VisualStudio\CVPractice\ImageProc\Lena.png)");
+  cv::Mat lena = cv::imread(R"(Lena.png)");
   cv::Mat lena_gray;
   cv::cvtColor(lena, lena_gray, cv::COLOR_BGR2GRAY);
   cv::Mat dst_gray;
