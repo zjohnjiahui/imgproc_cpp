@@ -3,6 +3,7 @@
 
 // refer:
 // https://zhuanlan.zhihu.com/p/382430357
+// https://blog.csdn.net/weixin_40163266/article/details/113802909
 
 // Statistical histogram
 void statHist(const cv::Mat& image, int* hist)
