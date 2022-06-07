@@ -7,8 +7,9 @@
 // https://github.com/chia56028/Color-Transfer-between-Images
 
 
-// src shall be in bgr or lab color space
-// the mean and std of src will be the same as tgt's after transfer 
+// image shall be in bgr or lab color space
+// main idea : equalize mean and std of src and tgt
+
 int transfer(cv::Mat& src, const cv::Mat& tgt)
 {
   cv::Mat tgt_mean;
