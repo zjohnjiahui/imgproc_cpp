@@ -38,7 +38,7 @@ int main()
   cv::Mat lena = cv::imread(R"(Lena.png)");
 
   uchar LUT[256];
-  makeGammaLUT(LUT, 2);
+  makeGammaLUT(LUT, 1/2.2f);
   applyLUT(lena, LUT);
   cv::imshow("lena", lena);
 
