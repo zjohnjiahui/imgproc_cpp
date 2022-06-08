@@ -4,6 +4,8 @@
 // refer: 
 // https://blog.csdn.net/linqianbi/article/details/78617615
 // https://blog.csdn.net/weixin_40647819/article/details/88027391
+// https://zhuanlan.zhihu.com/p/36581276
+// https://blog.csdn.net/qq_15972907/article/details/123748166
 
 void makeGammaLUT(uchar LUT[], float gamma)
 {
