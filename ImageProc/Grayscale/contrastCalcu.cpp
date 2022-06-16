@@ -62,7 +62,7 @@ namespace Prac {
 
 } // namespace
 
-void testCalcuContrast()
+int testCalcuContrast()
 {
   cv::Mat lena = cv::imread(R"(Lena.png)");
   cv::Mat lena_gray;
@@ -73,5 +73,5 @@ void testCalcuContrast()
   float contrastRMS = Prac::calcuRMSContrast(lena_gray);
   std::cout << "contrastRMS: " << contrastRMS << std::endl;
 
-  return;
+  return 0;
 }
