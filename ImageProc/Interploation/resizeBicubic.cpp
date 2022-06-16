@@ -95,4 +95,6 @@ void testBicubic()
 
   cv::Mat dst;
   Prac::resizeBicubic(lena, dst, cv::Size(1024, 1024));
+  
+  return;
 }
