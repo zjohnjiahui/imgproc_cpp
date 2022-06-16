@@ -89,12 +89,12 @@ namespace Prac {
 } // namespace
 
 
-void testBicubic()
+int testBicubic()
 {
   cv::Mat lena = cv::imread(R"(Lena.png)");
 
   cv::Mat dst;
   Prac::resizeBicubic(lena, dst, cv::Size(1024, 1024));
   
-  return;
+  return 0;
 }
