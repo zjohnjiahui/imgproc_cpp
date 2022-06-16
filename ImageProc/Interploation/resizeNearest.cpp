@@ -50,12 +50,12 @@ namespace Prac {
 }// namespace
 
 
-void testNearest()
+int testNearest()
 {
   cv::Mat lena = cv::imread(R"(D:\VisualStudio\CVPractice\ImageProc\Lena.png)");
 
   cv::Mat dst;
   Prac::resizeNearest(lena, dst, cv::Size(1024, 1024));
 
-  return;
+  return 0;
 }
