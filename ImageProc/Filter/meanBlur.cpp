@@ -39,10 +39,12 @@ void meanBlur(cv::Mat& _src, cv::Mat& _dst, cv::Size k)
 
 }// namespace
 
-void testMeanBlur()
+int testMeanBlur()
 {
   cv::Mat lena = cv::imread(R"(Lena.png)");
   cv::Mat dst;
 
   Prac::meanBlur(lena, dst, cv::Size(5,5));
+  
+  return 0;
 }
