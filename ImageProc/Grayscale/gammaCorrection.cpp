@@ -37,7 +37,7 @@ namespace Prac {
 
 } //namespace 
 
-void testGammaCorrection()
+int testGammaCorrection()
 {
   cv::Mat lena = cv::imread(R"(Lena.png)");
 
@@ -46,5 +46,5 @@ void testGammaCorrection()
   Prac::applyLUT(lena, LUT);
   cv::imshow("lena", lena);
 
-  return;
+  return 0;
 }
