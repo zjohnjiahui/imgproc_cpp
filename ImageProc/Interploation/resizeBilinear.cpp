@@ -126,7 +126,7 @@ namespace Prac {
 
 }// namespace
 
-void testBilinear()
+int testBilinear()
 {
   cv::Mat lena = cv::imread(R"(D:\VisualStudio\CVPractice\ImageProc\Lena.png)");
 
@@ -134,5 +134,5 @@ void testBilinear()
   Prac::resizeBilinear(lena, dst, cv::Size(1024, 1024));
   Prac::resizeBilinearQuantization(lena, dst, cv::Size(1024, 1024));
 
-  return;
+  return 0;
 }
