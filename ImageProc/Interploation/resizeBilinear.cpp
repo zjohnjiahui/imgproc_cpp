@@ -134,4 +134,5 @@ void testBilinear()
   Prac::resizeBilinear(lena, dst, cv::Size(1024, 1024));
   Prac::resizeBilinearQuantization(lena, dst, cv::Size(1024, 1024));
 
+  return;
 }
