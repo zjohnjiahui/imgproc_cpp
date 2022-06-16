@@ -4,6 +4,8 @@
 // https://blog.csdn.net/qq_29058565/article/details/52769497
 // https://blog.csdn.net/u010555688/article/details/24352343
 
+namespace Prac{
+
 void getWeight(double weight[4], double x, double a = -0.5) {
   int X = static_cast<int>(x);
   double dist[4];
@@ -83,3 +85,5 @@ void resizeBicubic(cv::Mat& src, cv::Mat& dst, cv::Size size, double sx, double 
     }
   }
 }
+  
+}//namespace
