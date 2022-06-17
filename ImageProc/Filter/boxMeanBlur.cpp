@@ -64,7 +64,7 @@ namespace Prac
 
 int testBoxMeanBlur()
 {
-  cv::Mat lena = cv::imread(R"(D:\VisualStudio\CVPractice\ImageProc\Lena.png)");
+  cv::Mat lena = cv::imread(R"(Lena.png)");
   cv::Mat dst;
 
   Prac::boxMeanBlur(lena, dst, cv::Size(5,5));
