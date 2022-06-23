@@ -42,7 +42,7 @@ int testGammaCorrection()
   cv::Mat lena = cv::imread(R"(Lena.png)");
 
   uchar LUT[256];
-  Prac::makeGammaLUT(LUT, 2);
+  Prac::makeGammaLUT(LUT, 2.2);
   Prac::applyLUT(lena, LUT);
   cv::imshow("lena", lena);
 
